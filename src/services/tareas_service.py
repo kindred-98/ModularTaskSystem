@@ -4,8 +4,9 @@ tareas_service.py
 Lógica principal de manejo de tareas.
 """
 
-from data import storage
-from utils.validators import validar_descripcion, validar_id
+from src.data import storage
+from src.utils.validators import validar_descripcion, validar_id
+
 
 def agregar_tarea(descripcion: str):
     ok, resultado = validar_descripcion(descripcion)
@@ -22,6 +23,7 @@ def agregar_tarea(descripcion: str):
     storage.contador_id += 1
     return True, f"✅ Tarea #{tarea['id']} añadida: '{resultado}'"
 
+
 def completar_tarea(id_str: str):
     ok, resultado = validar_id(id_str)
     if not ok:
@@ -36,6 +38,7 @@ def completar_tarea(id_str: str):
 
     return False, f"❌ No existe ninguna tarea con ID {resultado}."
 
+
 def eliminar_tarea(id_str: str):
     ok, resultado = validar_id(id_str)
     if not ok:
@@ -47,6 +50,7 @@ def eliminar_tarea(id_str: str):
             return True, f"🗑️  Tarea #{resultado} eliminada."
 
     return False, f"❌ No existe ninguna tarea con ID {resultado}."
+
 
 def listar_tareas():
     if not storage.tareas:

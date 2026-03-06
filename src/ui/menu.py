@@ -4,7 +4,12 @@ menu.py
 Interfaz de usuario para la aplicación de tareas.
 """
 
-from services.tareas_service import agregar_tarea, completar_tarea, eliminar_tarea, listar_tareas
+from src.services.tareas_service import (
+    agregar_tarea,
+    completar_tarea,
+    eliminar_tarea,
+    listar_tareas
+)
 
 def menu():
     """Muestra el menú principal y gestiona las opciones del usuario."""
