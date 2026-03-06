@@ -1,3 +1,29 @@
+<!-- Lenguaje -->
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
+
+<!-- Testing -->
+![Pytest](https://img.shields.io/badge/Tests-Pytest-0A9EDC?logo=pytest&logoColor=white)
+
+<!-- Editor -->
+![VSCode](https://img.shields.io/badge/Editor-VSCode-007ACC?logo=visual-studio-code&logoColor=white)
+
+<!-- Control de versiones -->
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
+
+<!-- Sistema operativo -->
+![Windows](https://img.shields.io/badge/OS-Windows-0078D6?logo=windows&logoColor=white)
+![OneDrive](https://img.shields.io/badge/OneDrive-Sync-0078D4?logo=microsoft-onedrive&logoColor=white)
+
+<!-- Arquitectura -->
+![Modular](https://img.shields.io/badge/Arquitectura-Modular-green)
+![Clean Code](https://img.shields.io/badge/Clean%20Code-Prácticas%20Aplicadas-brightgreen)
+![CLI App](https://img.shields.io/badge/CLI-App-lightgrey)
+
+<!-- Gestión del proyecto -->
+![README](https://img.shields.io/badge/Documentación-README-important)
+
+
 # 📝 TODO List Modular en Python
 
 Este proyecto es una **aplicación de lista de tareas (TODO)** organizada siguiendo principios de **modularización y Clean Code**.  
