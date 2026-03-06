@@ -8,49 +8,70 @@ El objetivo es separar responsabilidades en diferentes módulos y carpetas, haci
 ## 📂 Estructura del proyecto
 
 ```
-src/
-├── main.py                # Punto de entrada
-├── data/
-│   ├── __init__.py
-│   └── storage.py         # Almacenamiento de tareas en memoria
-├── services/
-│   ├── __init__.py
-│   └── tareas_service.py  # Lógica de manejo de tareas
-├── utils/
-│   ├── __init__.py
-│   └── validators.py      # Funciones de validación
-└── ui/
+Modularizacion_De_tarea2/
+│
+├── run.py
+├── pytest.ini
+├── requirements.txt
+│
+└── src/
     ├── __init__.py
-    └── menu.py            # Interfaz de usuario
-tests/
-├── __init__.py
-├── test_validators.py
-├── test_services.py
-└── test_storage.py
-requirements.txt
-README.md
+    ├── main.py
+    │
+    ├── ui/
+    │   ├── __init__.py
+    │   └── menu.py
+    │
+    ├── services/
+    │   ├── __init__.py
+    │   └── tareas_service.py
+    │
+    ├── data/
+    │   ├── __init__.py
+    │   └── storage.py
+    │
+    ├── utils/
+    │   ├── __init__.py
+    │   └── validators.py
+    │
+    └── tests/
+        ├── test_services.py
+        ├── test_storage.py
+        └── test_validators.py
 
 ```
 
-Cómo ejecutar la aplicación
+## 🚀Cómo ejecutar la aplicación
 
-1) Abrir la terminal en la raíz del proyect(Modularizacion_De_tarea2.py).
+✔ Opción recomendada
 
-2) Ejecutar la app:
-
+``` 
+python run.py
+``` 
+✔ Opción alternativa
 ``` bash
-cd src
-python main.py
+python -m src.main
 ```
 
-⚙️ Funcionalidades
+## 🧪 Cómo ejecutar los tests
 
-1) Añadir tarea
-2) Completar tarea
-3) Eliminar tarea
-4) Listar tareas
-5) Validaciones de entrada (descripción y ID)
-6) Almacenamiento en memoria (lista de Python)
+``` 
+pytest
+``` 
+``` 
+python -m pytest
+``` 
+
+## ⚙️ Funcionalidades
+
+1) Añadir tareas
+2) ompletar tareas
+3) Eliminar tareas
+4) Listar todas las tareas
+5) Validación de entradas (descripción mínima, ID válido)
+6) Almacenamiento en memoria mediante una lista interna
+7) Servicios separados para lógica de negocio
+8) Menú interactivo en consola
 
 🛠️ Dependencias
 
@@ -58,18 +79,30 @@ Python >= 3.10
 Opcional: pytest para tests
 pytest>=7.0.0
 
-📖 Prompts y requerimientos usados
+## 📖 Prompts y requerimientos usados
 
 1) Inicialmente: Modularización de código Python para separar responsabilidades.
 2) Estructura de carpetas src/, data/, services/, utils/, ui/, tests/.
 3) Implementación de validadores, storage, servicios y menú con docstrings.
 4) Resolución de errores de imports en Windows con imports absolutos o sys.path.
 5) Generación de README y documentación de todo el proyecto.
+6) Corrección de errores de imports en Windows mediante imports absolutos.
+7) Creación de un archivo run.py como punto de entrada estable.
+8) Configuración de pytest.ini para asegurar que pytest detecte el paquete src.
+9) Estructura profesional y mantenible siguiendo buenas prácticas.
 
-✅ Buenas prácticas
+
+## ✅ Buenas prácticas
 
 - Código modular y separado por responsabilidades
 - Uso de docstrings en todas las funciones
 - Almacenamiento temporal en memoria (storage.py)
+- Separación clara entre lógica de negocio y presentación.
 - Preparado para agregar tests en carpeta tests/
 - Compatible con Windows y ejecución directa desde main.py
+- Tests unitarios para validadores, almacenamiento y servicios.
+- Estructura compatible con Windows, Linux y macOS.
+- Ejecución estable mediante run.py o python -m src.main.
+
+# 📜 Licencia MIT
+Proyecto educativo. Uso libre para aprendizaje, clase de DiCampus con RUSGAR sobre la IA aplicada a la progamacion.
