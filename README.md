@@ -284,11 +284,11 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 ---
 
-## 📞 Contacto
+## 👨‍💻 Autor
 
-**Autor**: Ángel  
+**Autor**: A.D.E.V  
 **Proyecto**: TODO List Manager  
-**Repositorio**: [![GitHub](https://img.shields.io/badge/GitHub-kindred--98-181717?style=for-the-badge&logo=github)](https://github.com/kindred-98)
+[![GitHub](https://img.shields.io/badge/GitHub-kindred--98-181717?style=for-the-badge&logo=github)](https://github.com/kindred-98)
 
 Para preguntas o sugerencias, abre un issue en el repositorio.
 
