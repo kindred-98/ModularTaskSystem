@@ -288,7 +288,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 **Autor**: Ángel  
 **Proyecto**: TODO List Manager  
-**Repositorio**: [GitHub](https://github.com/tu-usuario/Modularizacion_De_tarea2.py)
+**Repositorio**: [![GitHub](https://img.shields.io/badge/GitHub-kindred--98-181717?style=for-the-badge&logo=github)](https://github.com/kindred-98)
 
 Para preguntas o sugerencias, abre un issue en el repositorio.
 
