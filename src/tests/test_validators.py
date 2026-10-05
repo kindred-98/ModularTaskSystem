@@ -1,4 +1,3 @@
-import pytest
 from src.utils.validators import validar_descripcion, validar_id
 
 def test_validar_descripcion_valida():
