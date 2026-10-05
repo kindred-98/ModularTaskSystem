@@ -3,9 +3,9 @@ from src.services import tareas_service
 from src.data import storage
 
 @pytest.fixture(autouse=True)
-def limpiar_storage():
-    storage.tareas.clear()
-    storage.contador_id = 1
+def limpiar_storage(monkeypatch):
+    monkeypatch.setattr(storage, "tareas", [])
+    monkeypatch.setattr(storage, "contador_id", 1)
 
 def test_agregar_tarea_valida():
     ok, msg = tareas_service.agregar_tarea("Comprar leche")
