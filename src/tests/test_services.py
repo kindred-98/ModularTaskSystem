@@ -15,12 +15,12 @@ def test_agregar_tarea_valida():
 
 def test_completar_tarea_existente():
     tareas_service.agregar_tarea("Estudiar Python")
-    ok, msg = tareas_service.completar_tarea("1")
+    ok, _ = tareas_service.completar_tarea("1")
     assert ok
     assert storage.tareas[0]["completada"]
 
 def test_eliminar_tarea_existente():
     tareas_service.agregar_tarea("Hacer ejercicio")
-    ok, msg = tareas_service.eliminar_tarea("1")
+    ok, _ = tareas_service.eliminar_tarea("1")
     assert ok
     assert len(storage.tareas) == 0
